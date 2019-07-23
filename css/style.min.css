@@ -4097,3 +4097,14 @@ form label {
     width: 70%;
   }
 }
+.modal-body {
+    position:relative; /* This avoids image to go off the container */
+    height: 200px;
+}
+.img-responsive {
+  display: block;
+   margin-left: auto;
+   margin-right: auto;
+    border-radius: 50%;
+}
+
