@@ -122,11 +122,11 @@ section {
     left: 0;
     right: 0;
     background: #66ffff;
-    /* fallback for old browsers */
+    
     background: -webkit-linear-gradient(to right, #333399, #66ffff);
-    /* Chrome 10-25, Safari 5.1-6 */
+    
     background: linear-gradient(to right, #333399, #66ffff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+     }
   .jumbotron h1 {
     line-height: .9;
     font-weight: bold;
@@ -153,11 +153,11 @@ section {
     left: 0;
     right: 0;
     background: #66ffff;
-    /* fallback for old browsers */
+    
     background: -webkit-linear-gradient(to right, #333399, #66ffff);
-    /* Chrome 10-25, Safari 5.1-6 */
+    
     background: linear-gradient(to right, #333399, #66ffff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+     }
   .overlay.bg-white {
     color: #000; }
     .overlay.bg-white:before {
@@ -167,9 +167,7 @@ section {
 .text-white {
   color: #fff; }
 
-/*==============================
-=            BUTTON            =
-==============================*/
+
 
 .btn {
   font-size:25px;
@@ -266,7 +264,7 @@ section {
 .btn-link {
   color: #0099ff; }
 
-/*=====  End of BUTTON  ======*/
+
 .btn1 {
   font-size:30px;
   font-weight: 600;
@@ -339,9 +337,7 @@ section {
 
 }
 
-/*==========================================
-=            FORM RECTANGLE ETC            =
-==========================================*/
+
 .rectangle-1 {
   width: 2000px;
   height: 400px;
@@ -536,10 +532,8 @@ section {
     height: 45px;
     transform: rotate(-40deg); }
 
-/*=====  End of FORM RECTANGLE ETC  ======*/
-/*================================
-=            FEATURES            =
-================================*/
+
+
 .feature-item {
   transition: all .2s ease-in-out 0s !important; }
   .feature-item:hover {
@@ -548,10 +542,8 @@ section {
 .progress-bar {
   background-color: #3366ff; }
 
-/*=====  End of FEATURES  ======*/
-/*=============================
-=            TESTI            =
-=============================*/
+
+
 .testi-img img {
   height: 60px;
   width: 60px !important;
@@ -623,10 +615,8 @@ section {
 .heading-section {
   position: relative; }
 
-/*=====  End of TESTI  ======*/
-/*=================================
-=            PORTFOLIO            =
-=================================*/
+
+
 .filter-button-group {
   margin-bottom: 15px; }
   .filter-button-group a {
@@ -686,10 +676,8 @@ section {
 .grid-title {
   text-align: center; }
 
-/*=====  End of PORTFOLIO  ======*/
-/*===============================
-=            SideNav            =
-===============================*/
+
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -745,9 +733,7 @@ section {
   background: transparent;
   color: #fff; }
 
-/*==============================
-=            SKILLS            =
-==============================*/
+
 .skill-item {
   width: 100%;
   position: relative;
@@ -763,10 +749,8 @@ section {
 .progress-bar, .progress {
   transition: all 4s; }
 
-/*=====  End of SKILLS  ======*/
-/*============================
-=            BLOG            =
-============================*/
+
+
 .blog-item {
   transition: all 0.3s ease-in-out;
   background-color: #3366ff;
@@ -834,10 +818,8 @@ section {
 .blog-content .img.float-right {
   margin: 15px 0 15px 15px; }
 
-/*=====  End of BLOG  ======*/
-/*====================================
-=            FORM CONTROL            =
-====================================*/
+
+
 .form-control:focus {
   border-color: #3366ff;
   box-shadow: 0 0 0 0.2rem rgba(253, 101, 90, 0.25); }
@@ -857,20 +839,16 @@ section {
 .form-control::placeholder {
   opacity: .5; }
 
-/*=====  End of FORM CONTROL  ======*/
-/*==============================
-=            CLIENT            =
-==============================*/
+
+
 .client-slider .owl-nav {
   display: none; }
 
 .client-slider .client-item {
   padding: 0 40px; }
 
-/*=====  End of CLIENT  ======*/
-/*==================================
-=            RESPONSIVE            =
-==================================*/
+
+
 .gtco-nav {
   position: relative;
   top: 0;
@@ -943,7 +921,7 @@ section {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
@@ -1555,7 +1533,7 @@ section {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1812,7 +1790,7 @@ form label {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
@@ -1978,22 +1956,22 @@ form label {
     height: auto;
     width: 100%;
     background: #3366ff;
-    /* fallback for old browsers */
+    
     background: -webkit-linear-gradient(to right, #333399, #3366ff);
-    /* Chrome 10-25, Safari 5.1-6 */
+    
     background: linear-gradient(to right, #333399, #3366ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     z-index: 11; }
   #header-navbar {
     padding-top: 15px !important;
     padding-bottom: 15px !important; }
   .navbar-transparent .navbar-collapse {
     background: #3366ff;
-    /* fallback for old browsers */
+    
     background: -webkit-linear-gradient(to right, #333399, #3366ff);
-    /* Chrome 10-25, Safari 5.1-6 */
+    
     background: linear-gradient(to right, #333399, #3366ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     padding: 10px; } }
 
 @media (max-width: 767px) {
@@ -2353,7 +2331,7 @@ form label {
       }
     }
 
-/*=====  End of RESPONSIVE  ======*/
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -2361,11 +2339,7 @@ form label {
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style
-*
-* ======================================================= */
+
 
 #page {
   position: relative;
@@ -2507,7 +2481,7 @@ p {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
@@ -2926,7 +2900,7 @@ p {
   font-weight: 700;
 }
 
-/*    background: linear-gradient(to right, #333399, #66ffff);*/
+
 #gtco-footer {
   background: #e5e7ff;
   padding: 1em 0 1em 0 !important;
@@ -3120,7 +3094,7 @@ p {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -3377,7 +3351,7 @@ form label {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\e921";
@@ -3879,7 +3853,7 @@ form label {
   }
 }
 
-/* Owl Override Style */
+
 .owl-carousel .owl-controls,
 .owl-carousel-posts .owl-controls {
   margin-top: 0;
@@ -4026,7 +4000,7 @@ form label {
 }
 
 
-/*333399, #66ffff*/
+
 .arrow-up {
   width: 0;
   height: 0;
@@ -4098,7 +4072,7 @@ form label {
   }
 }
 .modal-body {
-    position:relative; /* This avoids image to go off the container */
+    position:relative; 
     height: 200px;
 }
 .img-responsive {
