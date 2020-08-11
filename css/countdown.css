@@ -79,3 +79,9 @@ hr {
   background-color: #b7d0e2;
   border-radius: 20px;
 }
+#schedule {
+  width: 475px;
+  height: 269px;
+  text_align: center;
+
+}
