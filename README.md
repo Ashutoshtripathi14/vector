@@ -8,3 +8,10 @@ There isn't much to say besides, to the next web master, remember the following 
 - **REPLACE THE OLD WEBMASTERS FROM THE FOOTER WITH THE NEW ONE(s)**
 - **MAKE SURE TO UPDATE THE MEMBERS PAGE, BY ADDING PREVIOUS MEMBERS AS ALUMNI**
 - **DO NOT REMOVE ANY MEMBERS FROM THE ALUMNI PAGE. IF NEED BE, ADD ANOTHER PAGE FOR THE ALUMNI**
+
+---------------------------
+
+| Academic Year  | Name(s) of the Web Master(s) |
+| ------------- | ------------- |
+| 2019-20  | Ashutosh Tripathi (Creator)   |
+| 2020-21  | Chirag and Pranav  |
