@@ -4,7 +4,7 @@ Welcome to the Vector Club Website, the website to represent DPS International's
 This was made in 2019 by Ashutosh Tripathi. It was managed in 2020-21 by the two webmasters - Chirag and Pranav.
 There isn't much to say besides, to the next web master, remember the following contents:
 - **LOG THE WEBMASTERS IN THE TABLE BELOW**
-- **DO NOT REMOVE THE NAME OF THE CREATOR OF THE WEBSITE FROM THE FOOTER**
+- **DO NOT REMOVE THE NAME OF THE CREATOR OF THE WEBSITE FROM THE FOOTER** (Actually, nevermind, just have webmaster(s) in the footer from now)
 - **REPLACE THE OLD WEBMASTERS FROM THE FOOTER WITH THE NEW ONE(s)**
 - **MAKE SURE TO UPDATE THE MEMBERS PAGE, BY ADDING PREVIOUS MEMBERS AS ALUMNI**
 - **DO NOT REMOVE ANY MEMBERS FROM THE ALUMNI PAGE. IF NEED BE, ADD ANOTHER PAGE FOR THE ALUMNI**
