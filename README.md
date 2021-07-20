@@ -15,4 +15,4 @@ There isn't much to say besides, to the next web master, remember the following 
 | ------------- | ------------- |
 | 2019-20  | Ashutosh Tripathi (Creator)   |
 | 2020-21  | Chirag and Pranav  |
-| 2021-22  | Lakshay and Aditya  |
+| 2021-22  | Lakshay |
