@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vector Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/countdown.css" rel="stylesheet" type="text/css" />
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+
+	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-white" href="/">
+            <h3> </h3>
+            <img src="img/logo.png"></img>
+
+            <h3 class="font-weight-bolder mb-0">&nbsp Vector Club</h3>
+
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Quiz Corner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="members.html">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.thevectorclub.co.in/index.php?p=/">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+
+
+<div class="jumbotron jumbotron-single d-flex align-items-center" >
+  <div class="rectangle-transparent-1"></div>
+  <div class="rectangle-transparent-2"></div>
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <div class="circle-3"></div>
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">Vector Day 2021</h1>
+    <br>
+    <br>
+    <div id="del-countdown">
+      <div id="clock"></div>
+      <div id="units">
+        <span><b>Days</b></span>
+        <span><b>Hours</b></span>
+        <span><b>Minutes</b></span>
+        <span><b>Seconds</b></span>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function updateTimer(deadline){
+        var time = deadline - new Date();
+        return {
+          'days': Math.floor( time/(1000*60*60*24) ),
+          'hours': Math.floor( (time/(1000*60*60)) % 24 ),
+          'minutes': Math.floor( (time/1000/60) % 60 ),
+          'seconds': Math.floor( (time/1000) % 60 ),
+          'total' : time
+        };
+      }
+
+
+      function animateClock(span){
+        span.className = "turn";
+        setTimeout(function(){
+          span.className = "";
+        },700);
+      }
+
+      function startTimer(id, deadline){
+        var timerInterval = setInterval(function(){
+          var clock = document.getElementById(id);
+          var timer = updateTimer(deadline);
+
+          clock.innerHTML = '<span>' + timer.days + '</span>'
+                          + '<span>' + timer.hours + '</span>'
+                          + '<span>' + timer.minutes + '</span>'
+                          + '<span>' + timer.seconds + '</span>';
+
+          //animations
+          var spans = clock.getElementsByTagName("span");
+          animateClock(spans[3]);
+          if(timer.seconds == 59) animateClock(spans[2]);
+          if(timer.minutes == 59 && timer.seconds == 59) animateClock(spans[1]);
+          if(timer.hours == 23 && timer.minutes == 59 && timer.seconds == 59) animateClock(spans[0]);
+
+          //check for end of timer
+          if(timer.total < 1){
+            clearInterval(timerInterval);
+            clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
+          }
+
+
+        }, 1000);
+      }
+
+
+      window.onload = function(){
+        var deadline = new Date("July 24, 2021 09:00:00");
+        startTimer("clock", deadline);
+      };
+
+
+    </script>
+    <br>
+    <br>
+    <a class="btn btn-outline-primary btn-lg" href="vector2019.html">ARCHIVE</a>
+
+    <script src="countdown.js"></script>
+  </div>
+</div>
+<section id="who-we-are" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap" data-aos="fade-down">
+                <h2 class="section-title"> Welcome to the <b>FIRST EVER <br><b>VIRTUAL VECTOR DAY 2021</h2></b>
+                <h2 class="section-sub-title">6 events, 6 Houses, BRING IT  <b>ON</b></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zWQeSCNbHVs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+	    </div>
+	    <hr width="300">
+            <div class="title-wrap" data-aos="fade-down">
+		    <h2 class="section-title"><b>Discord Link for Vector Day 2021</b></h2>
+		   <a href="Schedule2020.pdf" target="_blank"> Click here to join the Vector Day 2021 Discord Server.</a>
+                <hr width="300">
+                <h2 class="section-title"><b><u>EVENTS</u></b></h2>
+                <hr width="300">
+            </div>
+		     <div class="title-wrap" data-aos="fade-down">
+                <h2 class="section-title">Bingo</h2>
+                <p>Exercise your mathematical ability by playing our own version of the popular game Bingo!</p><br>
+
+        <a href="Guidelines/Bingo.pdf" target="_blank"> Click here for Guidelines for Bingo</a>
+        <hr width="300">
+            </div>
+            <div class="title-wrap" data-aos="fade-down">
+                <h2 class="section-title">Mind Bender</h2>
+                <p> Challenge yourself and solve complex problems from an area of math beyond the general curriculum. Requires a free and curious mind to do well!</p><br>
+
+        <a href="Guidelines/MindBenderGuidelines.pdf" target="_blank"> Click here for Guidelines for Mind Bender</a>
+        <hr width="300">
+            </div>
+
+            <div class="title-wrap" data-aos="fade-down">
+                <h2 class="section-title">Quiz</h2>
+                <p>Engage your intellect in a quiz of mathematical topics. Quick observations and ingenious thought are the only qualities that are sought.</p><br>
+
+        <a href="Guidelines/JuniorQuiz.pdf" target="_blank"> Click here for Guidelines for Quiz</a>
+        <hr width="300">
+            </div>
+            <div class="title-wrap" data-aos="fade-down">
+                <h2 class="section-title">Hackathon</h2>
+                <p>Love programming? Love mathematics? How about both?</p><br>
+
+
+       <a href="Guidelines/AlgorhythmGuidelines.pdf" target="_blank"> Click here for Guidelines for Hackathon</a>
+       <hr width="300">
+            </div>
+            <div class="title-wrap" data-aos="fade-down">
+                <h2 class="section-title">Does it Function?</h2>
+		    <p>From the DPSI logo to Google’s ‘G’ everything can be explained using functions. And that’s essentially what the motive of 'Does it function' is</i></p><br>
+
+           <a href="Guidelines/AlgorhythmGuidelines.pdf" target="_blank"> Click here for Guidelines for Does it Function?</a>
+        <hr width="300">
+            </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-down">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="mb-2"><b>PAST EVENTS</b></h2>
+                    <br>
+                    <a class="btn btn-outline-primary btn-lg" href="vector2019.html">Vector Day 2019</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Features Section-->
+</div>
+<!--<footer class="mastfoot my-3">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         	</div>
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		<p class="mx-auto text-center mb-0">&copy; 2019 Vector Club.<br> A website by Ashutosh Tripathi<br>Maintained by Pranav Gupta and Chirag Kar</a>.</p>
+         	</div>
+            <div class="col-lg-4 col-md-12">
+            	<nav class="nav nav-mastfoot justify-content-center">
+	                <a class="nav-link" href="#">
+	                	<i class="fab fa-facebook-f"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="fab fa-twitter"></i>
+	                </a>
+	            </nav>
+            </div>
+        </div>
+    </div>
+    <i class="fa fa-facebook-official facebook-icon"></i>
+</footer>	-->
+		<footer id="gtco-footer" class="gtco-section" >
+      <div class="row">
+       <div class="col-lg-4 col-md-12 d-flex align-items-center">
+
+       </div>
+       <div class="col-lg-4 col-md-12 d-flex align-items-center">
+         <h7 style="color:#6622ff;" class="mx-auto text-center mb-0"><b>&copy; 2021 Vector Club.<br> A website by Ashutosh Tripathi<br>Maintained with ❤️ by Lakshay Kalra</b></a>.</h7>
+       </div>
+       <div class="col-lg-4 col-md-12">
+       </div>
+     </div>
+    </footer>
+
+    <div class="gototop js-top">
+      <a href="#" onclick="topFunction()"><i class="arrow-up"></i><h6 style="padding-top:15px; color:#333399"><b>TOP</b></h6><i class="arrow-up"></i></a>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+  <script src="https://github.com/livereload/livereload-js/raw/master/dist/livereload.js?host=localhost"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
